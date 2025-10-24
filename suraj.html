@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajput Surajsing Sandeepsing - Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        /* Apply Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for a more modern feel (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f2937; /* dark-800 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4b5563; /* dark-600 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6b7280; /* dark-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <!-- Header / Navigation Bar -->
+    <header class="bg-gray-800 bg-opacity-90 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Your Name/Logo -->
+            <a href="#home" class="text-2xl font-bold text-white hover:text-indigo-400 transition duration-300">
+                Rajput Surajsing Sandeepsing
+            </a>
+            
+            <!-- Mobile Menu Button (hidden on desktop) -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation Links (desktop) -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <ul class="flex flex-col space-y-4">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section 1: Home / Hero -->
+        <section id="home" class="min-h-screen flex items-center bg-gray-900">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                    Hi, I'm <span class="text-indigo-400">Rajput Surajsing Sandeepsing</span>
+                </h1>
+                <p class="text-2xl md:text-3xl text-gray-300 mb-8">
+                    I'm a Full Stack Developer & UI/UX Designer
+                </p>
+                <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-12">
+                    I specialize in building (and occasionally designing) exceptional digital experiences. I'm passionate about creating software that improves the lives of those around me.
+                </p>
+                <a href="#projects" class="bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out text-lg">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 2: About Me -->
+        <section id="about" class="bg-gray-800 py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="section-heading">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                    <!-- Profile Image Placeholder -->
+                    <div class="flex-shrink-0 w-64 h-64">
+                        <img 
+                            src="suraj.jpg" 
+                            alt="A placeholder image for your profile photo" 
+                            class="rounded-full w-full h-full object-cover shadow-2xl border-4 border-gray-700"
+                            onerror="this.src='https://placehold.co/400x400/1f2937/9ca3af?text=Image+Error'"
+                        >
+                    </div>
+                    <!-- Bio Text -->
+                    <div class="max-w-2xl text-center md:text-left">
+                        <p class="text-lg text-gray-300 mb-4">
+                            Hello! I'm Rajput Surajsing Sandeepsing, a passionate developer based in Vaijapur. I have a love for clean code, beautiful design, and solving complex problems.
+                        </p>
+                        <p class="text-lg text-gray-300 mb-4">
+                            I am currently pursuing my degree in Information Technology Engineering and have spent the last two years dedicating myself to honing my skills in front-end and back-end development. My goal is to build applications that are not only functional but also provide a delightful user experience.
+                        </p>
+                        <p class="text-lg text-gray-300">
+                            When I'm not coding, you can find me travelling and learning new things.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Projects -->
+        <section id="projects" class="bg-gray-900 py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="section-heading">My Projects</h2>
+                <p class="text-center text-lg text-gray-400 max-w-2xl mx-auto mb-16">
+                    Here are a few projects I've worked on recently. Want to see more? Feel free to <a href="#contact" class="text-indigo-400 hover:underline">get in touch</a>.
+                </p>
+
+                <!-- Project Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <img 
+                            src="project 1.png" 
+                            alt="Screenshot of Project 1" 
+                            class="project-image"
+                            onerror="this.src='https://placehold.co/600x400/374151/e5e7eb?text=Image+Error'"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-3">Laibhari - E-commerce Website</h3>
+                            <p class="text-gray-400 mb-4">
+                                A full-stack e-commerce website for men's fashion, "Laibhari: The Perfect Mens Wear". This project includes a complete front-end and back-end system.
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="http://localhost:3000/" class="project-link">Live Demo</a>
+                                <a href="https://github.com/surajrajput84/mens-wear-shop.git" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <img 
+                            src="project2.png" 
+                            alt="Screenshot of Project 2" 
+                            class="project-image"
+                            onerror="this.src='https://placehold.co/600x400/374151/e5e7eb?text=Image+Error'"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-3">Laibhari - Android App</h3>
+                            <p class="text-gray-400 mb-4">
+                                A native Android application for the "Laibhari" clothes shop, bringing the e-commerce experience to mobile users.
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="https://github.com/surajrajput84/Kotlin-Project.git" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <img 
+                            src="project 3.png" 
+                            alt="Screenshot of Project 3" 
+                            class="project-image"
+                            onerror="this.src='https://placehold.co/600x400/374151/e5e7eb?text=Image+Error'"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-3">Laibhari - UI/UX Design</h3>
+                            <p class="text-gray-400 mb-4">
+                                A complete UI/UX design case study for the "Laibhari" brand, focusing on user-centric design principles for both web and mobile platforms.
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="https://www.figma.com/design/Z5WZtG1tbzx35nzvtDKtMo/laibhari?node-id=0-1&p=f&t=ACItnMczOsnXb3fx-0" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more project cards as needed -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Contact -->
+        <section id="contact" class="bg-gray-800 py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-heading">Get In Touch</h2>
+                <p class="text-lg text-gray-300 max-w-lg mx-auto mb-8">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
+                </p>
+                <a href="mailto:your.email@example.com" class="bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out text-lg">
+                    Say Hello
+                </a>
+
+                <!-- Social Links (Optional) -->
+                <div class="flex justify-center space-x-8 mt-16">
+                    <a href="http://github.com/surajrajput84" class="text-gray-400 hover:text-indigo-400 transition duration-300" title="GitHub">
+                        <!-- SVG Icon for GitHub -->
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.202 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/surajsing-rajput-a77327328/" class="text-gray-400 hover:text-indigo-400 transition duration-300" title="LinkedIn">
+                        <!-- SVG Icon for LinkedIn -->
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+                    </a>
+                  
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; <span id="current-year"></span> Rajput Surajsing Sandeepsing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom CSS for common styles -->
+    <style>
+        .nav-link {
+            @apply text-gray-300 hover:text-indigo-400 transition duration-300 font-medium;
+        }
+        .mobile-nav-link {
+            @apply block text-gray-300 hover:text-indigo-400 transition duration-300 py-2 text-lg;
+        }
+        .section-heading {
+            @apply text-3xl md:text-4xl font-bold text-white text-center mb-12;
+        }
+        .project-card {
+            @apply bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl;
+        }
+        .project-image {
+            @apply w-full h-48 object-cover;
+        }
+        .project-link {
+            @apply inline-block bg-gray-700 text-gray-200 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-600 transition duration-300;
+        }
+    </style>
+
+    <!-- JavaScript for Mobile Menu and Smooth Scroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link, a[href^="#"]');
+
+            // Toggle mobile menu
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                // Toggle ARIA expanded attribute
+                const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+                menuButton.setAttribute('aria-expanded', !isExpanded);
+            });
+
+            // Smooth scrolling for all anchor links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    // Check if it's an internal hash link
+                    if (href.startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = href.substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        
+                        if (targetElement) {
+                            // Calculate offset for sticky header
+                            const headerOffset = document.querySelector('header').offsetHeight;
+                            const elementPosition = targetElement.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+
+                            // Close mobile menu on link click
+                            if (mobileMenu.classList.contains('hidden') === false) {
+                                mobileMenu.classList.add('hidden');
+                                menuButton.setAttribute('aria-expanded', 'false');
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+
+</body>
+</html>
+
